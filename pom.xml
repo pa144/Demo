@@ -4,33 +4,20 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>test</groupId>
-  <artifactId>demo</artifactId>
+  <groupId>Traini</groupId>
+  <artifactId>Demo</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>POM</packaging>
 
-  <name>demo</name>
+  <name>Demo</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<!--     <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target> -->
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
-<distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>DESKTOP-T5BGURO-releases</name>
-        <url>http://localhost:8081/artifactory/test</url>
-    </repository>
-    <snapshotRepository>
-        <id>central</id>
-        <name>DESKTOP-T5BGURO-snapshots</name>
-        <url>http://localhost:8081/artifactory/test</url>
-    </snapshotRepository>
-</distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -39,6 +26,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>DESKTOP-T5BGURO-releases</name>
+        <url>http://localhost:8081/artifactory/tek-maven</url>
+    </repository>
+    <snapshotRepository>
+        <id>central</id>
+        <name>DESKTOP-T5BGURO-snapshots</name>
+        <url>http://localhost:8081/artifactory/tek-maven</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
